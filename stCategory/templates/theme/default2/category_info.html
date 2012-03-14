@@ -1,0 +1,13 @@
+<div id="category_info">
+    <h2>{$name}</h2>
+    {if ($description)}
+    <div class="box roundies">
+        <div class="image">{$photo}</div>
+        <div class="description tinymce tinymce_html">{$description}</div>
+        <div class="clear"></div>
+    </div>
+    {/if}
+</div>
+{if $show_subcategories==1}
+    {$categories}
+{/if}
